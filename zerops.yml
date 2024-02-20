@@ -12,4 +12,4 @@ helloworld:
     # A command that should start your service.
     start: npm start
   envVariables:
-    key: value
+    key2: value
