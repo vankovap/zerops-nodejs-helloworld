@@ -13,3 +13,4 @@ helloworld:
     start: npm start
   envVariables:
     key: value
+    projectId: projectId
