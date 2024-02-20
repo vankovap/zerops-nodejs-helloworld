@@ -11,5 +11,3 @@ helloworld:
   run:
     # A command that should start your service.
     start: npm start
-  envVariables:
-    key2: value2
