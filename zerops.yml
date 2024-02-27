@@ -11,3 +11,5 @@ zerops:
     run:
       # A command that should start your service.
       start: npm start
+    envVariables:
+      projectId: project
