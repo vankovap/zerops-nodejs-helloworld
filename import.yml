@@ -1,9 +1,12 @@
 services:
-- hostname: helloworld
-  type: nodejs@14
-  minContainers: 1
-  maxContainers: 3
-  ports:
-  - port: 3000
-    httpSupport: true
-  buildFromGit: https://github.com/vankovap/zerops-nodejs-helloworld@main
+  - hostname: helloworld
+    type: nodejs@18
+    envSecrets:
+      SECRET: MGD5SZikS_2Y6ZY25KPt2k
+    ports:
+      - port: 3000
+        httpSupport: true
+    buildFromGit: https://github.com/vankovap/zerops-nodejs-helloworld@main
+    enableSubdomainAccess: true
+    minContainers: 1
+    maxContainers: 3
