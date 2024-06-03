@@ -8,8 +8,11 @@ zerops:
         - npm i
       # What files and directories should be copied from a build container into a runtime container.
       deploy: ['package.json', './app/index.js']
+      envVariables:
+        test1: notsosecret
     run:
       # A command that should start your service.
       start: npm start
-    envVariables:
-      SECRET: notsosecret
+      envVariables:
+        test2: notsosecret2
+
