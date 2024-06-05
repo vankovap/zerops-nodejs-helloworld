@@ -10,6 +10,7 @@ zerops:
       deploy: ['package.json', './app/index.js']
       envVariables:
         test1: notsosecret
+        test2: notsosecret1
     run:
       # A command that should start your service.
       start: npm start
